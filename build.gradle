@@ -1,0 +1,17 @@
+apply plugin: 'java'
+apply plugin: 'jacoco'
+apply plugin: 'application'
+
+
+mainClassName = 'test.Main'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    testImplementation     'junit:junit:4.13'
+}
+dependencies {
+    compile files('/home/rirll/NetBeansProjects/aes-everywhere-java-master/target/aes-everywhere-java-1.2.7-SNAPSHOT.jar')
+}
